@@ -10,6 +10,11 @@ ActiveRecord::Base.establish_connection(
 
 ActiveRecord::Base.include_root_in_json = false
 
+
+after do
+  ActiveRecord::Base.connection.close
+end
+
 class Task < ActiveRecord::Base
 end
 
