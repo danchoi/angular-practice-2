@@ -1,0 +1,31 @@
+<!doctype html>
+<html ng-app='myApp'>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular-resource.min.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
+
+
+    <script src="/site.js"></script>
+    <link rel="stylesheet" href="/site.css"/>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-3 well">
+          <h4>TODO Category</h4>
+          <ul>
+            <li><a href="#/tasks/all">All</a></li>
+            <li><a href="#/tasks/home">Home</a></li>
+            <li><a href="#/tasks/work">Work</a></li>
+          </ul>
+
+        </div>
+        <div class="col-9">
+          <div ng-view></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
